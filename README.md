@@ -7,5 +7,5 @@ Presentation about the Explosition of Mobile based on impress.js
 Dr Bilal Said
 
 
-** Prepared By **
+**Prepared By**
 Ahmad Moussawi

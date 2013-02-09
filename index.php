@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    <title>Mobile growth | Ahmad Moussawi</title>
     
     <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
     <meta name="author" content="Bartek Szopka" />
@@ -26,9 +26,16 @@
         
     -->
     <link href="css/impress-demo.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/skin/minimalist.css" />
     
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <style>.screen{display: none;} .note{font-size:14px;color: #222;}</style>
+
+    <style media="screen" type="text/css">
+        .screen{display: block;}
+    </style>
 </head>
 
 <!--
@@ -100,17 +107,43 @@
         
     -->
 
-    <div id="intro" class="step slide" data-x="-1000" data-y="-1500">
+    <div id="intro" class="step" data-x="-3800" data-y="0" data-z="0" data-rotate-y="30">
+
+
+        <div class="photoslides" style="z-index:1">
+            <img src="img/mobiles/mobile(20).png" />
+        </div>
 
         <div class="subintro">
-            <q class="title">The Explosion of Mobile</q>
-             
-            <h2 class="myname">Ahmad Moussawi</h2>
+            <q class="title" style="text-align: right;float: right;margin-bottom: 5px;font-size: 70px;">Mobile <span style="color:#064B06">Growth</span></q>
+
+            <!-- <h2 class="myname" style="text-align: right;float:right;width:100%">Ahmad Moussawi</h2> -->
 
             <h3 class="instructor">Mobile Information System by Dr <b>Bilal Said</b></h3>
+            <div style="clear:both"></div>
         </div>
 
     </div>
+
+
+    <div id="intro2" class="step" data-x="-2800" data-y="0" data-z="1000">
+
+        <p>Mobile technology <span style="color: #0853D8;font-size: 130%;">evolution</span></p>
+
+    <div class="photoslides" style="z-index:1">
+           <?php for($i=1;$i<15;$i++):?>
+           <img src="img/mobiles/p(<?php echo $i ?>).jpg" />
+       <?php endfor ?>
+       <?php for($i=18;$i<22;$i++):?>
+       <img src="img/mobiles/mobile(<?php echo $i ?>).png" />
+       <?php endfor ?>
+    </div>
+
+    <div class="screen note">
+        The infographic clearly shows that the popularity of browsing and buying through a mobile has almost doubled in recent years as consumer confidence in the channel continues to gain traction. Today, 54% of smartphone owners are using their phone to <span style="font-size:130%;color:red">shop</span>, whilst 38% have <span  style="font-size:130%;color:red">already purchased</span> something through their device.
+    </div>
+
+</div>
 
 <!--
     <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
@@ -133,15 +166,40 @@
         Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
         
     -->
-    <div class="step slide" data-x="0" data-y="-1500">
+    <div class="step" data-x="0" data-y="0">
         <q>
-             the popularity of browsing and buying through a <strong>mobile</strong> has almost <strong>doubled</strong> in recent years as consumer.
-        </q>
-    </div>
+         the popularity of <strong style="font-size:120%;color:#e00">browsing</strong> and <strong style="font-size:120%;color:#e00">buying</strong> through a <strong>mobile</strong> has almost <strong>doubled</strong> in recent years as consumer.
+     </q>
+     <p style="margin-top: 30px;text-align: center;font-size: 250px;font-weight: bold;color: #EC1C1C;">X2</p>
+ </div>
 
-    <div class="step slide" data-x="1000" data-y="-1500">
-        <q><strong>Today</strong></q>
-    </div>
+ <div class="step" data-x="2000" data-y="-300" data-z="-2000">
+    <q><strong>Today</strong></q>
+    <strong style="font-size:300%">54%</strong> of smartphone owners are using their phone to <span style="font-size:130%;color:red">shop</span>, whilst 
+    <strong style="font-size:300%">38%</strong> have already <span style="font-size:130%;color:red">purchased</span> something through their device.
+</div>
+
+<div id="chart-ownership" class="step" data-x="-2000" data-y="-1000" data-z="3000">
+    <div id="container-ownership" style="width: 800px; height: 400px; margin: 0 auto"></div>
+</div>
+
+
+<div id="chart-demographic" class="step" data-x="-2000" data-y="3000" data-rotate="45" data-scale="1">
+    <div id="container-demographic" style="width: 800px; height: 400px; margin: 0 auto"></div>
+    <button id="next">next</button>
+</div>
+
+
+<div id="video" class="step" data-x="2000" data-y="5000" data-z="13000" data-rotate="45" data-scale="1.3" style="opacity: 0.6;">
+     <!-- the player -->
+   <div class="flowplayer" data-swf="flowplayer.swf">
+      <video>
+         <source type="video/flv" src="video.flv"/>
+         <!-- <source type="video/mp4" src="http://stream.flowplayer.org/bauhaus/624x260.mp4"/>
+         <source type="video/ogv" src="http://stream.flowplayer.org/bauhaus/624x260.ogv"/> -->
+      </video>
+   </div>
+</div>
 
     <!--
         
@@ -153,16 +211,42 @@
         down (4 times) to make it back to it's correct size.
         
     -->
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="3" >
+    <div id="title" class="step" data-x="3000" data-y="2000" data-scale="3" >
         <span class="try">of smartphone owners are using their phone to shop</span>
         <h1>54%<sup>*</sup></h1>
         <span class="footnote"><sup>*</sup> no rhyme intended</span>
     </div>
 
+    <div id="title2" class="step" data-x="3000" data-y="5000" data-scale="2" data-z="8000" >
+        <span class="try">There are currently <div style="font-size:300%">6 Billion</div> mobile subscribers worldwide</span>
+    </div>
+
+    <div id="title3" class="step" data-x="5000" data-y="5000" data-scale="2" data-rotate="0"  data-z="5000" >
+        <span class="try">This equals <div style="font-size:350%">87%</div> of the world’s population</span>
+    </div>
+
+    <div id="title4" class="step" data-x="7000" data-y="5000" data-scale="2"  data-z="2000" style="background:url(img/china.jpg) no-repeat 0 0" >
+        <span class="try" style="background: rgba(255, 255, 255, 0.6);display: block;width: 500px;float: right;padding: 15px;">China and India account for <div class="rotating" style="color:#DA5C16;font-size:300%">30%</div> of this growth</span>
+    </div>
 
 
-    <div id="mobile2" class="step" data-x="2500" data-y="0" data-scale="3" data-rotate="90" data-z="-1500">
-            <strong>(51%)</strong> of the UK population now have access to a smartphone and potentially means that half of all shoppers could try and access a brand website through their mobile device
+    <div id="title5" class="step" data-x="1000" data-y="1200" data-z="3000" data-rotate-y="20" >
+        <img style="float:right;padding:10px;border:1px solid #eee;-webkit-transform:scale(1.5)" src="img/people-web.jpg" />
+        There are over 1.2 Billion people accessing the web from their mobiles
+    </div>
+
+    <div id="title6" class="step" data-x="2000" data-y="1400" data-z="3000" data-rotate-y="40" >
+        Over 300,000 apps have been developed in the past 3 years
+    </div>
+    
+    <div id="title7" class="step" data-x="3000" data-y="1600" data-z="3000" data-rotate-y="60" >
+        Google earns 2.5 Billion in mobile ad revenue annually
+    </div>
+
+
+
+    <div id="mobile2" class="step" data-x="4000" data-y="0" data-scale="3" data-rotate="90" data-z="-1500">
+        <strong>(51%)</strong> of the UK population now have access to a smartphone and potentially means that half of all shoppers could try and access a brand website through their mobile device
     </div>
 
     <!--
@@ -173,15 +257,15 @@
         element should be rotated by 90 degrees clockwise.
         
     -->
-    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+    <div id="its" class="step" data-x="3000" data-y="-500" data-rotate="90" data-scale="5">
         <p>It's a <strong>presentation tool</strong> <br/>
-        inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
-        and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
-    </div>
+            inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
+            and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
+        </div>
 
-    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <p>visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
-    </div>
+        <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+            <p>visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
+        </div>
 
     <!--
         
@@ -318,8 +402,138 @@ if ("ontouchstart" in document.documentElement) {
     Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
     
 -->
+<!-- <link href="css/supersized.css" type="text/css" rel="stylesheet" /> -->
+<!-- <link href="theme/supersized.shutter.css" type="text/css" rel="stylesheet" /> -->
 <script src="js/impress.js"></script>
-<script>impress().init();</script>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/flowplayer.min.js"></script>
+<script src="js/highcharts/highcharts.js"></script>
+<!-- <script src="js/supersized.3.2.6.min.js"></script> -->
+<!-- <script src="theme/supersized.shutter.min.js"></script> -->
+<script src="js/jquery.cycle.all.js"></script>
+<script>
+impress().init();
+
+var chartDemographic = false,
+chartOwnership = false;
+
+$('.photoslides').cycle({ fx:'fade,scrollUp,scrollDown,scrollLeft,scrollRight',timeout:200, speed:100,randomizeEffects: true})
+
+$('.step').on('impress:stepenter', function() {
+
+    var id = $(this).attr('id');
+
+    if( id === 'chart-ownership'){
+
+        if(chartOwnership){
+            return;
+        }
+        chartOwnership = true;
+
+        var colors = Highcharts.getOptions().colors,
+        categories = ['MSIE', 'Firefox', 'Chrome', 'Safari', 'Opera'],
+        name = 'Browser brands',
+        data = [38,41,50];
+
+
+
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'container-ownership', 
+                type: 'column'
+            },
+            title: {
+                text: 'Browser market share, April, 2011'
+            },
+            subtitle: {
+                text: 'Click the columns to view versions. Click again to view brands.'
+            },
+            xAxis: {
+                categories: 'jan 10,jan 11,jan 12'.split(',')                          
+            },
+            yAxis: {
+                title: {
+                    text: 'Total percent market share'
+                }
+            }
+            });
+            
+}else if(id == 'chart-demographic'){
+   if(chartDemographic){
+    return;
+}
+chartDemographic = true;
+
+var chart;
+chart = new Highcharts.Chart({
+    chart: {
+        renderTo: 'container-demographic',
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        events: {
+            load: function() {
+            }
+        }
+    },
+    title: {
+        text: 'Smartphones demographics 2012'
+    },
+    tooltip: {
+        formatter: function() {
+            return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
+        }
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                color: '#000000',
+                connectorColor: '#000000',
+                formatter: function() {
+                    return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
+                }
+            }
+        }
+    },
+    series: [{
+        type: 'pie',
+        name: 'Demoghraphics',
+        data: [
+        {
+            name: 'Female',
+            y: 56.0,
+            color:'#E957E3'
+        },
+        {
+            name: 'Male',    
+                                //sliced: false,
+                                //selected: true,
+                                y: 44,
+                                color : '#0072bc'
+                            }
+                            ]
+                        }]
+                    });
+
+$('#next').click(function(){
+
+                 // set up the updating of the chart each second
+
+                 console.log(chart.series);
+                 chart.series[0].data = [];
+
+                 chart.series[0].addPoint({name:'Female',y:30});
+                 chart.series[0].addPoint({name:'Male',y:70});
+             })
+
+}
+});
+</script>
+
 
 <!--
     

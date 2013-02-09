@@ -1,0 +1,16 @@
+* Mobile Tech Evolution
+** Mobile features
+*** MP3 Player
+*** Radio
+*** Camera
+*** Voice Recorder
+*** Bluetooth
+*** Wifi
+*** Internet
+*** GPS
+
+* Usage for Mobile
+** Graph that show the usage for mobile statistic
+
+* Ownership
+* Man
