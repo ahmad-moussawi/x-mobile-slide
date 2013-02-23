@@ -1,61 +1,20 @@
 <!doctype html>
-
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=1024" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <title>Mobile growth | Ahmad Moussawi</title>
-
-        <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
-        <meta name="author" content="Bartek Szopka" />
-
-        <!--
-            
-            Impress.js doesn't depend on any external stylesheet. Script adds all styles it needs for
-            presentation to work.
-            
-            This style below contains styles only for demo presentation. Browse it to see how impress.js
-            classes are used to style presentation steps, or how to apply fallback styles, but I don't want
-            you to use them directly in your presentation.
-            
-            Be creative, build your own. We don't really want all impress.js presentations to look the same,
-            do we?
-            
-            When creating your own presentation get rid of this file. Start from scratch, it's fun!
-            
-        -->
-        <link href="css/impress-demo.css" rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="css/skin/minimalist.css" />
-
+        <meta name="description" content="Mobile Growth Presentation, Mobile Information System, Dr. Bilal Said, built with impress.js" />
+        <meta name="author" content="Ahmad Moussawi" />
+        <link href="assets/css/impress-demo.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="assets/css/skin/minimalist.css" />
         <link rel="shortcut icon" href="favicon.png" />
-        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-
         <style>.screen{display: none;} .note{font-size:14px;color: #222;}</style>
-
         <style media="screen" type="text/css">
             .screen{display: block;}
         </style>
     </head>
-
-    <!--
-        
-        Body element is used by impress.js to set some useful class names, that will allow you to detect
-        the support and state of the presentation in CSS or other scripts.
-        
-        First very useful class name is `impress-not-supported`. This class means, that browser doesn't
-        support features required by impress.js, so you should apply some fallback styles in your CSS.
-        It's not necessary to add it manually on this element. If the script detects that browser is not
-        good enough it will add this class, but keeping it in HTML means that users without JavaScript
-        will also get fallback styles.
-        
-        When impress.js script detects that browser supports all required features, this class name will
-        be removed.
-        
-        The class name on body element also depends on currently active presentation step. More details about
-        it can be found later, when `hint` element is being described.
-        
-    -->
     <body class="impress-not-supported">
 
         <!--
@@ -108,15 +67,12 @@
             -->
 
             <div id="intro" class="step" data-x="-2800" data-y="0" data-z="0" data-rotate-y="30">
-
-
                 <q class="title" style="margin-bottom: 5px;font-size: 70px;">Mobile <span style="color:#064B06">Growth</span></q>
                 <div id="introslides" class="photoslides" style="z-index:1">
-                    <img src="img/mobiles/mobile(20).png" />
+                    <img src="assets/img/mobiles/mobile(20).png" />
                 </div>
                 <h3 class="instructor">Mobile Information System by Dr <b>Bilal Said</b></h3>
                 <div style="clear:both"></div>
-
             </div>
 
 
@@ -127,27 +83,19 @@
 
                 <div class="photoslides" style="z-index:1">
                     <?php for ($i = 1; $i < 15; $i++): ?>
-                        <img src="img/mobiles/p(<?php echo $i ?>).jpg" />
+                        <img src="assets/img/mobiles/p(<?php echo $i ?>).jpg" />
                     <?php endfor ?>
                     <?php for ($i = 18; $i < 22; $i++): ?>
-                        <img src="img/mobiles/mobile(<?php echo $i ?>).png" />
+                        <img src="assets/img/mobiles/mobile(<?php echo $i ?>).png" />
                     <?php endfor ?>
                 </div>
 
                 <div class="screen note">
-                    The infographic clearly shows that the popularity of browsing and buying through a mobile has almost doubled in recent years as consumer confidence in the channel continues to gain traction. Today, <span style="text-decoration:line-through">54%</span> of smartphone owners are using their phone to <span style="font-size:130%;color:red">shop</span>, whilst 38% have <span  style="font-size:130%;color:red">already purchased</span> something through their device.
+                    This is a note :) and will not be displayed on projector
                 </div>
 
             </div>
-
             <!--
-                <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-                    <q>Aren't you just <b>bored</b> with all those slides-based presentations?</q>
-                </div>
-            -->
-
-            <!--
-                
                 The `id` attribute of the step element is used to identify it in the URL, but it's optional.
                 If it is not defined, it will get a default value of `step-N` where N is a number of slide.
                 
@@ -168,8 +116,6 @@
                 <p style="margin-top: 30px;text-align: center;font-size: 250px;font-weight: bold;color: #EC1C1C;">X2</p>
             </div>
 
-
-
             <div class="step" data-x="2000" data-y="-300" data-z="-2000">
                 <q><strong>Today</strong></q>
                 <strong style="font-size:300%"><span class="strike" style="text-decoration: line-through;color: #CACACA;">54%</span><span style="color:#26B40B">78%</span></strong> of smartphone owners are using their phone to <span style="font-size:130%;color:red">shop</span>, whilst 
@@ -177,7 +123,7 @@
             </div>
 
             <div id="buying-online" class="step" data-x="-2000" data-y="-1000" data-z="3000">
-                <img src="img/charts/c(5).jpg" alt="">
+                <img src="assets/img/charts/c(5).jpg" alt="">
             </div>
 
 
@@ -188,9 +134,9 @@
 
             <div id="video" class="step" data-x="2000" data-y="5000" data-z="13000" data-rotate="45" data-scale="1.3" style="opacity: 0.9;">
                 <!-- the player -->
-                <div class="flowplayer" data-swf="flowplayer.swf">
+                <div class="flowplayer" data-swf="assets/video/flowplayer.swf">
                     <video>
-                        <source type="video/flv" src="video.flv"/>
+                        <source type="video/flv" src="assets/video/video.flv"/>
                         <!-- <source type="video/mp4" src="http://stream.flowplayer.org/bauhaus/624x260.mp4"/>
                         <source type="video/ogv" src="http://stream.flowplayer.org/bauhaus/624x260.ogv"/> -->
                     </video>
@@ -211,7 +157,7 @@
                 <p style="color:#5F6CFF;font-size:70%">Mobile use is growing faster than all of Google's internal predictions</p>
 
                 <h2 style="">Schmidt noted : </h2>
-                <img src="img/eric-schmidt-620x409.jpg" alt="" style="float:left;margin-right: 30px;">
+                <img src="assets/img/eric-schmidt-620x409.jpg" alt="" style="float:left;margin-right: 30px;">
                 <blockquote class="try" style="font-size:90%">"We look at the charts internally and it's happening <b>faster</b> than all of our predictions"</blockquote>
 
             </div>
@@ -224,13 +170,13 @@
                 <span class="try">This equals <div style="font-size:350%">87%</div> of the world’s population</span>
             </div>
 
-            <div id="title4" class="step" data-x="7000" data-y="5000" data-scale="2"  data-z="2000" style="background:url(img/china-mobile.jpg) no-repeat 0 0" >
+            <div id="title4" class="step" data-x="7000" data-y="5000" data-scale="2"  data-z="2000" style="background:url(assets/img/china-mobile.jpg) no-repeat 0 0" >
                 <span class="try" style="background: rgba(255, 255, 255, 0.6);display: block;width: 500px;float: right;padding: 15px;">China and India account for <div class="rotating" style="color:#DA5C16;font-size:300%">30%</div> of this growth</span>
             </div>
 
 
             <div id="title5" class="step" data-x="1000" data-y="1200" data-z="3000" data-rotate-y="20" >
-                <img style="float:right;padding:10px;border:1px solid #eee;-webkit-transform:scale(1.5)" src="img/people-web.jpg" />
+                <img style="float:right;padding:10px;border:1px solid #eee;-webkit-transform:scale(1.5)" src="assets/img/people-web.jpg" />
                 There are over 1.2 Billion people accessing the web from their mobiles
             </div>
 
@@ -256,7 +202,7 @@
 
 
                 <div style="float:right;margin-left:20px">
-                    <img style="display: block;" src="img/kodak.jpg" alt=""/>
+                    <img style="display: block;" src="assets/img/kodak.jpg" alt=""/>
                     <a style="font-size:40%" href="http://www.economist.com/node/21542796" target="_blank">http://www.economist.com/node/21542796</a><br/>
                     <a style="font-size:40%" href="http://visitapps.com/the-billion-dollar-principle/" target="_blank">http://visitapps.com/the-billion-dollar-principle/</a>
                 </div>
@@ -273,42 +219,29 @@
             </div>
 
             <!--
-                
                 This element introduces rotation.
-                
                 Notation shouldn't be a surprise. We use `data-rotate="90"` attribute, meaning that this
                 element should be rotated by 90 degrees clockwise.
-                
             -->
-            <!-- <div id="its" class="step" data-x="3000" data-y="-500" data-rotate="90" data-scale="5">
-                <p>It's a <strong>presentation tool</strong> <br/>
-                    inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
-                    and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
-            </div> -->
+
 
             <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6" style="background-color:rgba(255,255,255,.8)">
-
-                <img src="img/iphone-slide.png" alt="" width="40%" style="float:left"/>
-
+                <img src="assets/img/iphone-slide.png" alt="" width="40%" style="float:left"/>
                 <p>Even you can watch this presentation on <b>mobile</b> <!-- <span class="thoughts">Presentation on</span> --></p>
-
                 <p style="font-size:80%;color:#f00;margin-top:15px"> ma tsad2o :p</p>
             </div>
 
             <!--
-                
                 And now it gets really exciting! We move into third dimension!
-                
                 Along with `data-x` and `data-y`, you can define the position on third (Z) axis, with
                 `data-z`. In the example below we use `data-z="-3000"` meaning that element should be
                 positioned far away from us (by 3000px).
-                
             -->
             <div id="github" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
                 <q>
                     <p style="text-align: center;">OR </p>
                     <p style="text-align: center;font-size: 150%;">Fork</p>
-                    <p style="text-align:center"><img src="img/github.jpg" alt="" style=""></p>
+                    <p style="text-align:center"><img src="assets/img/github.jpg" alt="" style=""></p>
                     <p style="text-align: center;">the Source Code on GitHub</p>
                     <p style="text-align: center;"><a href="http://github.com/ahmad-moussawi/x-mobile-slide" style="font-size:20px;font-family:monospace;text-align:center;">http://github.com/ahmad-moussawi/x-mobile-slide !!</a> </p>
                 </q>
@@ -378,9 +311,6 @@
                     <a href="http://twitter.com/ahmadmuzavi">http://twitter.com/ahmadmuzavi</a><br/>
                     <a href="http://stackoverflow.com/users/1104402/ahmad">http://stackoverflow.com/users/1104402/ahmad</a><br/>
                 </div>
-
-        <!-- <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it's</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p> -->
-        <!-- <span class="footnote">* beat that, prezi ;)</span> -->
             </div>
             
 
@@ -452,16 +382,12 @@
             Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
             
         -->
-        <!-- <link href="css/supersized.css" type="text/css" rel="stylesheet" /> -->
-        <!-- <link href="theme/supersized.shutter.css" type="text/css" rel="stylesheet" /> -->
-        <script src="js/impress.js"></script>
-        <script src="js/jquery-1.7.1.min.js"></script>
-        <script src="js/jquery.easing.min.js"></script>
-        <script src="js/flowplayer.min.js"></script>
-        <script src="js/highcharts/highcharts.js"></script>
-        <!-- <script src="js/supersized.3.2.6.min.js"></script> -->
-        <!-- <script src="theme/supersized.shutter.min.js"></script> -->
-        <script src="js/jquery.cycle.all.js"></script>
+        <script src="assets/js/impress.js"></script>
+        <script src="assets/js/jquery-1.7.1.min.js"></script>
+        <script src="assets/js/jquery.easing.min.js"></script>
+        <script src="assets/js/flowplayer.min.js"></script>
+        <script src="assets/js/highcharts/highcharts.js"></script>
+        <script src="assets/js/jquery.cycle.all.js"></script>
         <script>
             impress().init();
             var chartDemographic = false,
@@ -566,52 +492,6 @@
             is used in event handlers.
             
         -->
-
     </body>
 </html>
-
-<!--
-    
-    Now you know more or less everything you need to build your first impress.js presentation, but before
-    you start...
-    
-    Oh, you've already cloned the code from GitHub?
-    
-    You have it open in text editor?
-    
-    Stop right there!
-    
-    That's not how you create awesome presentations. This is only a code. Implementation of the idea that
-    first needs to grow in your mind.
-    
-    So if you want to build great presentation take a pencil and piece of paper. And turn off the computer.
-    
-    Sketch, draw and write. Brainstorm your ideas on a paper. Try to build a mind-map of what you'd like
-    to present. It will get you closer and closer to the layout you'll build later with impress.js.
-    
-    Get back to the code only when you have your presentation ready on a paper. It doesn't make sense to do
-    it earlier, because you'll only waste your time fighting with positioning of useless points.
-    
-    If you think I'm crazy, please put your hands on a book called "Presentation Zen". It's all about 
-    creating awesome and engaging presentations.
-    
-    Think about it. 'Cause impress.js may not help you, if you have nothing interesting to say.
-    
--->
-
-<!--
-    
-    Are you still reading this?
-    
-    For real?
-    
-    I'm impressed! Feel free to let me know that you got that far (I'm @bartaz on Twitter), 'cause I'd like
-    to congratulate you personally :)
-    
-    But you don't have to do it now. Take my advice and take some time off. Make yourself a cup of coffee, tea,
-    or anything you like to drink. And raise a glass for me ;)
-    
-    Cheers!
-    
--->
 
