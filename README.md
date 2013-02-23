@@ -1,7 +1,7 @@
 Explosition of Mobile Presentation
 ============
 
-Presentation about the Explosition of Mobile based on impress.js
+Presentation about Mobile Growth based on impress.js
 
 **Mobile Information System**
 Dr Bilal Said
